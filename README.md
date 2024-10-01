@@ -1,7 +1,7 @@
 # Physical Computing Project 2024 - IT KMITL
 
-66070309 Sarun Manpraphan
-66070239 Kittiphot Mongkolrat
+66070309 Sarun Manpraphan\
+66070239 Kittiphot Mongkolrat\
 66070247 Chanokchon Pancome
 
 จุดประสงค์
