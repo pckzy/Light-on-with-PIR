@@ -3,7 +3,7 @@
 ## [Webpage ของโครงงาน](https://pckzy.github.io/Light-on-with-PIR/)
 
 ## โปสเตอร์
-![poster.png](img/poster.png)
+![poster.png](poster/poster.png)
 
 ## [Video ของโครงงาน](https://www.youtube.com/watch?v=3EsJ36GZZ9s)
 
