@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icons.png">
+    <title>Light on with PIR </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#mainpage">หน้าแรก</a>
+            <a href="#info">เกี่ยวกับ</a>
+            <a href="#tools">อุปกรณ์ที่ใช้</a>
+            <a href="#video">วิดีโอตัวอย่าง</a>
+            <a href="#code">Source Code</a>
+            <a href="#member">สมาชิกในกลุ่ม</a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="profile-box">
+            <div class="profile-header" id="mainpage">
+                <br><br><br><br>
+                <h1 class="username">Welcome to</h1>
+                <h1 class="username">Light on with PIR Project</h1>
+            </div>
+            <div class="content-section" id="info">
+                <div class="info-section">
+                    <h2>บทคัดย่อ</h2>
+                    <div class="info-box">
+                        <p><tr>โครงงาน “Light on with PIR” มีวัตถุประสงค์เพื่อศึกษาและพัฒนาไมโครคอนโทรลเลอร์ Arduino
+                            สำหรับควบคุมอุปกรณ์อิเล็กทรอนิกส์ โดยมุ่งเน้นการใช้เซ็นเซอร์ตรวจจับการเคลื่อนไหว (PIR
+                            Sensor) ในการตรวจจับการเคลื่อนไหวของมนุษย์ โดยใช้ไมโครคอนโทรลเลอร์ Arduino เพื่อให้สามารถเปิด-ปิดไฟได้อัตโนมัติเมื่อมีการเคลื่อนไหวในพื้นที่ที่กำหนด 
+                            โครงงานนี้ยังเพิ่มฟังก์ชันการควบคุมผ่านระบบ WiFi เพื่อให้สามารถสั่งงานเปิด-ปิดไฟผ่านเว็บได้
+                             รวมถึงสามารถเลือกโหมดการทำงานได้ทั้งแบบอัตโนมัติ (PIR sensor) และแบบ Manual</p>
+                        <br>
+                        <p>ประโยชน์ที่ได้รับจากโครงงานนี้คือความสะดวกในการควบคุมการเปิด/ปิดไฟ LED
+                            ซึ่งมีให้เลือกสองรูปแบบ ได้แก่ 1) การเปิด/ปิดไฟด้วยตนเอง และ 2)
+                            การเปิดไฟอัตโนมัติด้วยเซ็นเซอร์ PIR เป็นโหมดอัตโนมัติช่วยลดการใช้พลังงาน
+                            โดยเมื่อไม่มีการตรวจพบการเคลื่อนไหว ไฟจะหรี่ลง แต่หากตรวจพบคน ไฟจะติดสว่างเต็มที่
+                            ซึ่งทั้งสองรูปแบบนี้สามารถปรับเปลี่ยนได้ตามความต้องการในหน้าเว็บ</p>
+                    </div>
+                    <h2>ฟังก์ชันหลัก</h2>
+                    <div class="info-box">
+                        <p>โครงงานนี้ช่วยให้ผู้ใช้สามารถควบคุมและตรวจสอบไฟที่บ้านหรือสถานที่ทำงานได้อย่างสะดวกสบายยิ่งขึ้น โดยไม่ต้องเปิด-ปิดไฟด้วยตัวเอง 
+                            ลดการสิ้นเปลืองพลังงานไฟฟ้าเมื่อไม่มีการใช้งาน เนื่องจากระบบจะทำการลดไฟอัตโนมัติเมื่อไม่มีการเคลื่อนไหวในพื้นที่ที่กำหนด 
+                            และยังมีการควบคุมผ่านระบบ WiFi ทำให้เพิ่มความสะดวกสบายและความยืดหยุ่นในการใช้งาน
+                            ได้ไหม</p>
+                    </div>
+                </div>
+                <div class="info-section" id="tools">
+                    <h2>อุปกรณ์ที่ใช้</h2>
+                    <div class="info-box2">
+                        <div class="info-card">
+                            <a href="https://docs.arduino.cc/hardware/uno-r4-wifi/" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/hMbfb8X/traffic1.jpg" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>Arduino UNO R4 WIFI</h3>
+                                        <p>จำนวน 1 ชิ้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://en.wikipedia.org/wiki/Breadboard" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/56bx7GF/traffic2.jpg" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>Breadboard</h3>
+                                        <p>จำนวน 1 ชิ้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://en.wikipedia.org/wiki/Jump_wire" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/V9r2cSj/wire.png" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>Jumper Wire</h3>
+                                        <p>จำนวน 6 เส้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://en.wikipedia.org/wiki/Resistor" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/9tZ4WWp/traffic4.jpg" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>Resistor</h3>
+                                        <p>จำนวน 1 ชิ้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://en.wikipedia.org/wiki/Light-emitting_diode" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/rvyfS2x/traffic5.jpg" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>หลอดไฟ LED</h3>
+                                        <p>จำนวน 1 ชิ้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://wiki.seeedstudio.com/Grove-PIR_Motion_Sensor/" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/TKBnsP9/pir.png" alt="" class="info-card-image">
+                                    <div class="info-card-text">
+                                        <h3>PIR Sensor</h3>
+                                        <p>จำนวน 1 ชิ้น</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-section" id="video">
+                    <h2>วิดีโอตัวอย่าง</h2>
+                    <div class="info-box">
+                        <div class="video-card-content">
+                            <div class="video-card-gif">
+                                <iframe src="https://www.youtube.com/embed/3EsJ36GZZ9s?si=BOu6Xe55ce6NzKKE"
+                                    title="YouTube player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-section" id="code">
+                    <h2>Project Code</h2>
+                    <div class="info-box">
+                        <div class="img-code">
+                            <img src="https://i.ibb.co/thZRbXC/codeimg2.png" alt="Code Screenshot">
+                        </div>
+                    </div>
+                </div>
+                <div class="member-section" id="member">
+                    <h2>สมาชิกในกลุ่ม</h2>
+                    <div class="info-box2">
+                        <div class="info-card">
+                            <a href="https://www.instagram.com/romie_ohm" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/gFLTh6N/ohm.png" alt="" class="info-card-image">
+                                    <div class="member-card-text">
+                                        <h3>กิตติพศ มงคลรัตน์<br>66070239</้>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info-card">
+                            <a href="https://www.instagram.com/_chanokchon" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/nwjjWfV/som.png" alt="" class="info-card-image">
+                                    <div class="member-card-text">
+                                        <h3>ชนกชนม์ แผ่นคำ<br>66070247</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <a href="https://www.instagram.com/sr.pckzy_/" target="_blank">
+                                <div class="info-card-content">
+                                    <img src="https://i.ibb.co/SfPM5vK/Untitled-1.png" alt="" class="info-card-image">
+                                    <div class="member-card-text">
+                                        <h3>ศรัณย์ มั่นประพันธ์<br>66070309</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="footer-line">
+    <footer>
+        <p>© 2024 Copyright: <a href="https://github.com/pckzy/Light-on-with-PIR"
+                target="_blank">PhysicalProject.com</a></p>
+    </footer>
+</body>
